@@ -152,7 +152,6 @@ export const people: Person[] = [
     name: 'Ansley Gnanapragasam',
     role: 'Former PhD student',
     group: 'alumni',
-    photo: ,
     currentPosition: '[Current position to be added]',
   },
   {
