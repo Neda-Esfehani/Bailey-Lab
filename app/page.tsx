@@ -24,7 +24,7 @@ export default function HomePage() {
         eyebrow={`${site.institution.instituteShort} · ${site.institution.university}`}
         title={site.name}
         tagline={site.tagline}
-        description="Understanding how genomic and epigenomic alterations shape cancer progression, metastasis and therapeutic response."
+        description="Dr. Swneke Bailey’s lab combines genomics, epigenomics and bioinformatics to uncover how regulatory changes drive esophageal cancer, metastasis and treatment resistance."
         actions={[
           { label: 'Explore Our Research', href: '/research' },
           { label: 'Meet the Team', href: '/people', variant: 'secondary' },
@@ -38,15 +38,12 @@ export default function HomePage() {
             <SectionHeading
               id="intro-heading"
               eyebrow="About the lab"
-              title="Understanding cancer through the genome"
+              title="From regulatory DNA to patient care"
             />
           </div>
           <div className="lg:col-span-7">
             <p className="max-w-prose text-lg leading-relaxed text-ink-soft">
-              [Lab description to be added.] This paragraph will introduce the Bailey
-              Lab — the questions the group works on, the balance of experimental and
-              computational approaches used, and the clinical setting the research sits
-              within at the {site.institution.institute}.
+              The Bailey Lab studies how somatic alterations reshape gene regulation in cancer. By connecting high-throughput genomics with computational analysis and clinically grounded questions, the lab seeks mechanisms that can improve the survival of patients with cancers of the stomach and esophagus.
             </p>
             <p className="mt-5 max-w-prose text-base leading-relaxed text-ink-muted">
               [Additional context to be added.] A second paragraph can describe
@@ -67,7 +64,7 @@ export default function HomePage() {
           id="themes-heading"
           eyebrow="Research"
           title="Three connected research directions"
-          description="[Short overview of the lab’s research programme to be added.]"
+          description="Three linked questions guide the lab: which regulatory alterations matter, how they rewire chromatin, and how those changes can inform precision cancer care."
         />
         <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {researchThemes.map((theme) => (
@@ -95,13 +92,10 @@ export default function HomePage() {
               id="featured-heading"
               className="mt-4 text-3xl font-semibold leading-[1.12] tracking-[-0.02em] sm:text-4xl"
             >
-              [Featured project title to be added]
+              Making the non-coding cancer genome actionable
             </h2>
             <p className="mt-5 max-w-prose text-base leading-relaxed text-ink-soft">
-              [Featured research description to be added.] This block highlights one
-              project or research direction at a time. Replace the text, image and link
-              in <code className="rounded bg-canvas px-1.5 py-0.5 text-sm">data/research.ts</code>{' '}
-              to feature something new.
+              The lab combines whole-genome sequencing, epigenomic profiling and 3D genome analysis to connect structural variants and regulatory mutations to the genes and pathways that shape tumour behaviour.
             </p>
             <div className="mt-9">
               <ButtonLink href={`/research#${featuredTheme.id}`}>Learn More</ButtonLink>
@@ -117,7 +111,7 @@ export default function HomePage() {
             id="team-heading"
             eyebrow="People"
             title="The team"
-            description="[Short description of the lab’s team to be added.]"
+            description="A collaborative team working across cancer biology, genomics, bioinformatics and surgical oncology."
           />
           <ArrowLink href="/people" className="pb-2">
             Meet the full team
@@ -170,7 +164,7 @@ export default function HomePage() {
       <CTASection
         eyebrow="Join us"
         title="Interested in joining the Bailey Lab?"
-        description="[Short recruitment message to be added.] The lab welcomes enquiries from prospective graduate students, postdoctoral fellows, research staff and undergraduate researchers."
+        description="Dr. Bailey is currently recruiting M.Sc. students, M.Sc. non-thesis project students and Ph.D. students. Explore opportunities and get in touch."
         actions={[
           { label: 'View Opportunities', href: '/join' },
           { label: 'Contact Us', href: '/contact', variant: 'secondary' },
