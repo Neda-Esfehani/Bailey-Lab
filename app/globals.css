@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --nav-height: 4.5rem;
+    /* Typefaces — swap these two lines to re-type the whole site. */
+    --font-inter: 'Inter Variable', 'Inter';
+    --font-manrope: 'Manrope Variable', 'Manrope';
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--nav-height);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display text-ink;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* Visible, consistent focus ring for keyboard users on every interactive element. */
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent-600 ring-offset-2 ring-offset-paper rounded-sm;
+  }
+
+  ::selection {
+    @apply bg-accent-100 text-accent-900;
+  }
+}
+
+@layer components {
+  /* Shared page container — one place to change the site's gutters. */
+  .container-page {
+    @apply mx-auto w-full max-w-content px-6 sm:px-8 lg:px-10;
+  }
+
+  .link-underline {
+    @apply underline decoration-line-strong underline-offset-4 transition-colors duration-200 hover:decoration-accent-600;
+  }
+}
+
+/* Respect users who ask for less motion: disable all animation site-wide. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
