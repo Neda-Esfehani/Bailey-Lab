@@ -26,13 +26,7 @@ export function Hero({
 }) {
   return (
     <section className="hero-shell relative overflow-hidden border-b border-line bg-paper">
-      <div aria-hidden="true" className="hero-constellation">
-        <span className="hero-node hero-node-a" />
-        <span className="hero-node hero-node-b" />
-        <span className="hero-node hero-node-c" />
-        <span className="hero-node hero-node-d" />
-        <span className="hero-node hero-node-e" />
-      </div>
+      <div aria-hidden="true" className="hero-constellation" />
 
       {/* Very subtle grid wash — keeps the hero from feeling empty without decoration. */
       <div
