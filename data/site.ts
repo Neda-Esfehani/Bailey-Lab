@@ -10,13 +10,13 @@ export const site = {
   defaultTitle: 'Bailey Lab | Cancer Genomics & Epigenomics',
   tagline: 'Decoding the regulatory genome of cancer',
   description:
-    'The Bailey Lab at the Research Institute of the McGill University Health Centre (RI-MUHC) and McGill University studies how genomic and epigenomic alterations shape cancer progression, metastasis and therapeutic response.',
+    'The Bailey Lab at the RI-MUHC and McGill University uses genomics, epigenomics and bioinformatics to study esophageal cancer, metastasis, chemoresistance and regulatory alterations.',
 
   /**
    * Public URL of the deployed site. Used for canonical links and OpenGraph.
    * Replace when the final domain is known.
    */
-  url: 'https://neda-esfehani.github.io/bailey-lab-website',
+  url: 'https://neda-esfehani.github.io/Bailey-Lab',
   ogImage: '/images/og-default.png',
 
   institution: {
@@ -29,8 +29,8 @@ export const site = {
   /** ⚠️ Placeholder — do not publish until confirmed by the lab. */
   contact: {
     labEmail: '[lab-email@example.com]',
-    piName: '[PI Name], PhD',
-    piEmail: '[pi-email@example.com]',
+    piName: 'Swneke D. Bailey, PhD',
+    piEmail: 'swneke.bailey@mcgill.ca',
     phone: '[+1 (000) 000-0000]',
     addressLines: [
       '[Building name]',
@@ -46,7 +46,7 @@ export const site = {
   /** ⚠️ Placeholder profile links. */
   socials: {
     email: 'mailto:[lab-email@example.com]',
-    googleScholar: 'https://scholar.google.com/',
+    googleScholar: 'https://scholar.google.co.uk/',
     pubmed: 'https://pubmed.ncbi.nlm.nih.gov/',
     linkedin: 'https://www.linkedin.com/',
   },
