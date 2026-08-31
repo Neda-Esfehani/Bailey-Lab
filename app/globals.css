@@ -46,9 +46,70 @@
     @apply mx-auto w-full max-w-content px-6 sm:px-8 lg:px-10;
   }
 
+  .hero-shell {
+    isolation: isolate;
+    background:
+      radial-gradient(circle at 78% 18%, rgba(23, 123, 129, 0.13), transparent 28rem),
+      radial-gradient(circle at 18% 92%, rgba(123, 187, 189, 0.14), transparent 24rem),
+      #ffffff;
+  }
+
+  .hero-shell::after {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    content: '';
+    opacity: 0.42;
+    background-image: linear-gradient(115deg, transparent 0 47%, rgba(15, 97, 105, 0.08) 47.2% 47.4%, transparent 47.6% 100%);
+    background-size: 22rem 22rem;
+    animation: hero-drift 18s linear infinite;
+  }
+
+  .hero-constellation {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.8;
+    background-image:
+      linear-gradient(32deg, transparent 49.7%, rgba(15, 97, 105, 0.14) 50%, transparent 50.3%),
+      linear-gradient(148deg, transparent 49.7%, rgba(15, 97, 105, 0.11) 50%, transparent 50.3%);
+    background-position: 72% 34%, 84% 68%;
+    background-size: 15rem 15rem, 19rem 19rem;
+    animation: hero-drift 24s ease-in-out infinite alternate;
+  }
+
+  .hero-node {
+    position: absolute;
+    width: 0.55rem;
+    height: 0.55rem;
+    border: 2px solid rgba(15, 97, 105, 0.55);
+    border-radius: 999px;
+    background: #ffffff;
+    box-shadow: 0 0 0 0.4rem rgba(15, 97, 105, 0.08);
+    animation: hero-pulse 4s ease-in-out infinite;
+  }
+
+  .hero-node-a { top: 22%; right: 24%; }
+  .hero-node-b { top: 48%; right: 12%; animation-delay: -1.3s; }
+  .hero-node-c { bottom: 18%; right: 30%; animation-delay: -2.1s; }
+  .hero-node-d { top: 34%; right: 42%; animation-delay: -2.8s; }
+  .hero-node-e { bottom: 28%; left: 46%; animation-delay: -0.7s; }
+
   .link-underline {
     @apply underline decoration-line-strong underline-offset-4 transition-colors duration-200 hover:decoration-accent-600;
   }
+}
+
+@keyframes hero-drift {
+  from { transform: translate3d(-1%, -1%, 0) rotate(0deg); }
+  to { transform: translate3d(1%, 1%, 0) rotate(2deg); }
+}
+
+@keyframes hero-pulse {
+  0%, 100% { transform: scale(0.85); opacity: 0.55; }
+  50% { transform: scale(1.15); opacity: 1; }
 }
 
 /* Respect users who ask for less motion: disable all animation site-wide. */
