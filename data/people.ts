@@ -1,8 +1,7 @@
 /**
  * Lab members.
  *
- * ⚠️ PLACEHOLDER PEOPLE — no real lab members have been invented.
- * Replace each entry with a real person, or delete the entry.
+
  *
  * To add a member:
  *   1. Drop a square photo (≥600×600, .jpg or .webp) in /public/images/people/
@@ -57,18 +56,19 @@ export const personGroups: {
 export const people: Person[] = [
   {
     id: 'principal-investigator',
-    name: '[PI Name], PhD',
+    name: 'Swneke D. Bailey, PhD',
     role: 'Principal Investigator',
     group: 'pi',
+    photo: ,
     bio: '[Member biography to be added.] This section will hold a short biography of the Principal Investigator, including training background, current appointments at the RI-MUHC and McGill University, and the overall direction of the lab.',
     interests: [
-      '[Research interest 1]',
-      '[Research interest 2]',
-      '[Research interest 3]',
+      'Cancer Epigenetics',
+      'Bioinformatics',
+      'Surgical Oncology',
     ],
-    email: 'mailto:[pi-email@example.com]',
-    scholar: 'https://scholar.google.com/',
-    linkedin: 'https://www.linkedin.com/',
+    email: 'mailto:[swneke.bailey@mcgill.ca]',
+    scholar: 'https://scholar.google.com/citations?hl=en&user=2lMTdfsAAAAJ&view_op=list_works&sortby=pubdate',
+    linkedin: 'https://www.linkedin.com/in/swneke-bailey-b31b53145/',
   },
 
   {
@@ -91,25 +91,28 @@ export const people: Person[] = [
 
   {
     id: 'grad-1',
-    name: '[Graduate Student Name]',
+    name: 'Eftyhios Kirbizakis (Aki)',
     role: 'PhD Student',
     group: 'graduate',
+    photo: ,
     bio: '[Member biography]',
     interests: ['[Interest]', '[Interest]'],
   },
   {
     id: 'grad-2',
-    name: '[Graduate Student Name]',
+    name: 'Kyle White',
     role: 'PhD Student',
     group: 'graduate',
+    photo: ,
     bio: '[Member biography]',
     interests: ['[Interest]'],
   },
   {
     id: 'grad-3',
-    name: '[Graduate Student Name]',
+    name: 'Neda Esfehani',
     role: 'MSc Student',
     group: 'graduate',
+    photo: ,
     bio: '[Member biography]',
     interests: ['[Interest]'],
   },
@@ -146,9 +149,10 @@ export const people: Person[] = [
 
   {
     id: 'alumni-1',
-    name: '[Alumni Name]',
-    role: 'Former Postdoctoral Fellow',
+    name: 'Ansley Gnanapragasam',
+    role: 'Former PhD student',
     group: 'alumni',
+    photo: ,
     currentPosition: '[Current position to be added]',
   },
   {
