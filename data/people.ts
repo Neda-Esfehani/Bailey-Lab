@@ -92,11 +92,11 @@ export const people: Person[] = [
   {
     id: 'grad-1',
     name: 'Eftyhios Kirbizakis (Aki)',
-    role: 'PhD Student',
+    role: 'PhD Candidate',
     group: 'graduate',
     photo: '/images/people/aki.jpg',
     bio: '[Member biography]',
-    interests: ['[Interest]', '[Interest]'],
+    interests: ['Bioinformatics', 'Noncoding variation'],
   },
   {
     id: 'grad-2',
