@@ -27,7 +27,7 @@ export const gallery: GalleryItem[] = [
    {
      id: 'photo-1',
      year: 2026,
-     image: 'public/images/newa/aki-histrader.jpg',
+     image: 'public/images/news/aki-histrader.jpg',
      imageAlt: '',
      caption: 'Aki\'s Histrader paper got accepted!',
    },
