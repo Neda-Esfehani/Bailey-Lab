@@ -96,7 +96,14 @@ export const people: Person[] = [
     group: 'graduate',
     photo: '/images/people/aki.jpg',
     bio: '[Member biography]',
-    interests: ['Bioinformatics', 'Noncoding variation'],
+    interests: [
+    'Bioinformatics', 
+    'Noncoding variation'
+    ],
+    email: 'mailto:[e.kirbizakis@gmail.com]',
+    scholar: 'https://scholar.google.com/citations?user=Yk3o33wAAAAJ&hl=en',
+    linkedin: 'https://www.linkedin.com/in/eftyhios-kirbizakis-a6686bb0/',
+    github: 'https://github.com/5Aki1'
   },
   {
     id: 'grad-2',
