@@ -104,7 +104,7 @@ export const people: Person[] = [
     ],
     scholar: 'https://scholar.google.com/citations?user=imraPocAAAAJ&hl=en',
     linkedin: 'https://www.linkedin.com/in/kyle-white-529498160/',
-    email 'mailto:kyle.h.white@mail.mcgill.ca'
+    email: 'mailto:kyle.h.white@mail.mcgill.ca'
   },
   {
     id: 'grad-3',
