@@ -35,6 +35,7 @@ export type Person = {
   linkedin?: string;
   scholar?: string;
   website?: string;
+  github?: string;
   /** Alumni only: where they went next. */
   currentPosition?: string;
 };
