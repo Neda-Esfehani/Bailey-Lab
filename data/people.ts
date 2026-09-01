@@ -91,12 +91,17 @@ export const people: Person[] = [
   },
   {
     id: 'grad-2',
-    name: 'Kyle White',
+    name: 'Kyle H. White',
     role: 'PhD Student',
     group: 'graduate',
     photo: '/images/people/kyle.jpg',
-    bio: '[Member biography]',
-    interests: ['[Interest]'],
+    bio: '[Catch me on a mountain or on a lake]',
+    interests: [
+    'CRISPR-technologies'
+    'Novel methodology design'
+    'ecDNA Mechanisms'
+    'Precision medicine'
+    ],
   },
   {
     id: 'grad-3',
