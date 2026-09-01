@@ -1,13 +1,13 @@
 import { CTASection } from '@/components/CTASection';
 import { Hero } from '@/components/Hero';
-import { NewsCard } from '@/components/NewsCard';
+import { GalleryCard } from '@/components/GalleryCard';
 import { PersonCard } from '@/components/PersonCard';
 import { PublicationPreview } from '@/components/PublicationItem';
 import { Placeholder } from '@/components/Placeholder';
 import { ResearchCard } from '@/components/ResearchCard';
 import { SectionHeading } from '@/components/SectionHeading';
 import { ArrowLink, ButtonLink, Section } from '@/components/ui';
-import { latestNews } from '@/data/news';
+import { latestGallery } from '@/data/gallary';
 import { teamPreview } from '@/data/people';
 import { featuredPublications } from '@/data/publications';
 import { featuredTheme, researchThemes } from '@/data/research';
