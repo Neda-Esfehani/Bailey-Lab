@@ -95,13 +95,16 @@ export const people: Person[] = [
     role: 'PhD Student',
     group: 'graduate',
     photo: '/images/people/kyle.jpg',
-    bio: '[Catch me on a mountain or on a lake]',
+    bio: 'Catch me on a mountain or a lake.',
     interests: [
     'CRISPR-technologies',
     'Novel methodology design',
     'ecDNA Mechanisms',
     'Precision medicine'
     ],
+    scholar: 'https://scholar.google.com/citations?user=imraPocAAAAJ&hl=en',
+    linkedin: 'https://www.linkedin.com/in/kyle-white-529498160/',
+    email 'mailto:kyle.h.white@mail.mcgill.ca'
   },
   {
     id: 'grad-3',
@@ -116,14 +119,14 @@ export const people: Person[] = [
 
   {
     id: 'undergrad-1',
-    name: '[Undergraduate Student Name]',
+    name: 'Hande Soran',
     role: 'Undergraduate Researcher',
     group: 'undergraduate',
     bio: '[Member biography]',
   },
   {
     id: 'undergrad-2',
-    name: '[Undergraduate Student Name]',
+    name: 'Dianyang Wang',
     role: 'Undergraduate Researcher',
     group: 'undergraduate',
     bio: '[Member biography]',
@@ -138,10 +141,10 @@ export const people: Person[] = [
   },
   {
     id: 'alumni-2',
-    name: '[Alumni Name]',
-    role: 'Former PhD Student',
+    name: 'Jiayin Xie',
+    role: 'Former undergraduate student',
     group: 'alumni',
-    currentPosition: '[Current position to be added]',
+    currentPosition: 'To be determined...',
   },
 ];
 
