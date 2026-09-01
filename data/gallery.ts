@@ -31,6 +31,14 @@ export const gallery: GalleryItem[] = [
      imageAlt: 'Aki Kirbizakis celebrating the acceptance of the Histrader paper',
      caption: 'Aki\'s Histrader paper got accepted!',
    },
+
+  {
+     id: 'photo-2',
+     year: 2026,
+     image: '/images/news/kyle-plate.jpg',
+     imageAlt: '30 plates too many...',
+     caption: '30 plates too many...',
+   },
 ];
 
 /** Newest year first; same-year photos keep their array order. */
