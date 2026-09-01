@@ -145,19 +145,25 @@ export default function HomePage() {
         </div>
       </Section>
 
-      {/* 7 — Latest news */}
-      <Section tone="canvas" labelledBy="news-heading">
+      {/* 7 — Gallery */}
+      <Section tone="canvas" labelledBy="gallery-heading">
         <div className="flex flex-wrap items-end justify-between gap-6">
-          <SectionHeading id="news-heading" eyebrow="News" title="Latest news" />
-          <ArrowLink href="/news" className="pb-2">
-            View all news
+          <SectionHeading id="gallery-heading" eyebrow="Gallery" title="Inside the lab" />
+          <ArrowLink href="/gallery" className="pb-2">
+            View the gallery
           </ArrowLink>
         </div>
-        <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          {latestNews.map((item) => (
-            <NewsCard key={item.id} item={item} />
-          ))}
-        </div>
+        {latestGallery.length > 0 ? (
+          <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {latestGallery.map((item) => (
+              <GalleryCard key={item.id} item={item} />
+            ))}
+          </div>
+        ) : (
+          <p className="mt-8 max-w-2xl text-base leading-relaxed text-ink-muted">
+            We are building a visual record of the Bailey Lab’s people, research and community.
+          </p>
+        )}
       </Section>
 
       {/* 8 — Join the lab */}
