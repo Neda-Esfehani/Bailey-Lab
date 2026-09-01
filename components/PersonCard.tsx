@@ -7,6 +7,7 @@ function ProfileLinks({ person, compact = false }: { person: Person; compact?: b
     person.email ? { label: 'Email', href: person.email } : null,
     person.scholar ? { label: 'Google Scholar', href: person.scholar } : null,
     person.linkedin ? { label: 'LinkedIn', href: person.linkedin } : null,
+    person.github ? { label: 'GitHub', href: person.github } : null,
     person.website ? { label: 'Website', href: person.website } : null,
   ].filter(Boolean) as { label: string; href: string }[];
 

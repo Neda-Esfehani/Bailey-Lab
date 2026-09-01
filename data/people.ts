@@ -101,10 +101,10 @@ export const people: Person[] = [
     'Bioinformatics', 
     'Noncoding variation'
     ],
-    email: 'mailto:[e.kirbizakis@gmail.com]',
+    github: 'https://github.com/5Aki1',
     scholar: 'https://scholar.google.com/citations?user=Yk3o33wAAAAJ&hl=en',
     linkedin: 'https://www.linkedin.com/in/eftyhios-kirbizakis-a6686bb0/',
-    github: 'https://github.com/5Aki1'
+    email: 'mailto:e.kirbizakis@gmail.com',
   },
   {
     id: 'grad-2',
