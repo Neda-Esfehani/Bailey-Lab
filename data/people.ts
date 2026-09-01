@@ -72,23 +72,6 @@ export const people: Person[] = [
     linkedin: 'https://www.linkedin.com/in/swneke-bailey-b31b53145/',
   },
 
-  {
-    id: 'postdoc-1',
-    name: '[Postdoctoral Fellow Name]',
-    role: 'Postdoctoral Fellow',
-    group: 'postdoc',
-    bio: '[Member biography]',
-    interests: ['[Interest]', '[Interest]'],
-    email: 'mailto:[email@example.com]',
-  },
-  {
-    id: 'postdoc-2',
-    name: '[Postdoctoral Fellow Name]',
-    role: 'Postdoctoral Fellow',
-    group: 'postdoc',
-    bio: '[Member biography]',
-    interests: ['[Interest]', '[Interest]'],
-  },
 
   {
     id: 'grad-1',
@@ -125,20 +108,6 @@ export const people: Person[] = [
     interests: ['[Interest]'],
   },
 
-  {
-    id: 'staff-1',
-    name: '[Research Staff Name]',
-    role: 'Research Associate',
-    group: 'staff',
-    bio: '[Member biography]',
-  },
-  {
-    id: 'staff-2',
-    name: '[Research Staff Name]',
-    role: 'Bioinformatician',
-    group: 'staff',
-    bio: '[Member biography]',
-  },
 
   {
     id: 'undergrad-1',
