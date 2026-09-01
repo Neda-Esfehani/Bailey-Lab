@@ -24,13 +24,13 @@ export type GalleryYearGroup = {
 
 export const gallery: GalleryItem[] = [
   // Uncomment after adding your image and replacing the text:
-  // {
-  //   id: 'photo-1',
-  //   year: 2026,
-  //   image: '/images/gallery/photo-1.jpg',
-  //   imageAlt: '[Describe what is visible in this photo]',
-  //   caption: '[Add your caption here]',
-  // },
+   {
+     id: 'photo-1',
+     year: 2026,
+     image: 'public/images/newa/aki-histrader.jpg',
+     imageAlt: '',
+     caption: 'Aki\'s Histrader paper got accepted!',
+   },
 ];
 
 /** Newest year first; same-year photos keep their array order. */
