@@ -97,9 +97,9 @@ export const people: Person[] = [
     photo: '/images/people/kyle.jpg',
     bio: '[Catch me on a mountain or on a lake]',
     interests: [
-    'CRISPR-technologies'
-    'Novel methodology design'
-    'ecDNA Mechanisms'
+    'CRISPR-technologies',
+    'Novel methodology design',
+    'ecDNA Mechanisms',
     'Precision medicine'
     ],
   },
