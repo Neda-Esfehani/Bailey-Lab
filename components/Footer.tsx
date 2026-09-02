@@ -11,15 +11,18 @@ const externalLinks = [
 
 function FundingLogo({ label, src }: { label: string; src: string }) {
   return (
-    <div className="flex h-20 items-center justify-center rounded-lg border border-line bg-paper px-5 py-3">
+    <div className="flex min-h-28 flex-col items-center justify-between gap-2 rounded-lg border border-line bg-paper px-4 py-3">
       {/* Static hosting does not provide Next image optimization. */}
       <img
         src={withBasePath(src)}
         alt={label}
         loading="lazy"
         decoding="async"
-        className="max-h-14 w-auto max-w-[12rem] object-contain"
+        className="max-h-12 w-auto max-w-[12rem] object-contain"
       />
+      <span className="text-center text-[0.65rem] font-semibold uppercase leading-tight tracking-[0.08em] text-ink-muted">
+        {label}
+      </span>
     </div>
   );
 }
