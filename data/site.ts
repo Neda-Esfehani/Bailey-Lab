@@ -10,7 +10,7 @@ export const site = {
   defaultTitle: 'Bailey Lab | Cancer Genomics & Epigenomics',
   tagline: 'Decoding the regulatory genome of cancer',
   description:
-    'The Bailey Lab at the RI-MUHC and McGill University uses genomics, epigenomics and bioinformatics to study esophageal cancer, metastasis, chemoresistance and regulatory alterations.',
+    'The Bailey Lab at the RI-MUHC and McGill University uses genomics, epigenomics and bioinformatics to study gastroesophageal cancer, metastasis, chemoresistance and regulatory alterations.',
 
   /**
    * Public URL of the deployed site. Used for canonical links and OpenGraph.
@@ -31,12 +31,11 @@ export const site = {
     labEmail: '[lab-email@example.com]',
     piName: 'Swneke D. Bailey, PhD',
     piEmail: 'swneke.bailey@mcgill.ca',
-    phone: '[+1 (000) 000-0000]',
     addressLines: [
-      '[Building name]',
-      '[Street address]',
-      '[Room / floor]',
-      'Montreal, Quebec [Postal code]',
+      'RI-MUHC',
+      '1001 Bd Décarie',
+      'E02.4126',
+      'Montréal, QC H4A 3J1',
       'Canada',
     ],
     /** Replace with a real Google Maps / OpenStreetMap link for the building. */
