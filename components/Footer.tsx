@@ -11,18 +11,15 @@ const externalLinks = [
 
 function FundingLogo({ label, src }: { label: string; src: string }) {
   return (
-    <div className="flex min-h-28 flex-col items-center justify-between gap-2 rounded-lg border border-line bg-paper px-4 py-3">
+    <div className="flex min-h-36 items-center justify-center rounded-lg border border-line bg-white px-5 py-5">
       {/* Static hosting does not provide Next image optimization. */}
       <img
         src={withBasePath(src)}
         alt={label}
         loading="lazy"
         decoding="async"
-        className="max-h-12 w-auto max-w-[12rem] object-contain"
+        className="max-h-24 w-auto max-w-full object-contain"
       />
-      <span className="text-center text-[0.65rem] font-semibold uppercase leading-tight tracking-[0.08em] text-ink-muted">
-        {label}
-      </span>
     </div>
   );
 }
@@ -101,7 +98,7 @@ export function Footer() {
               We are grateful to the organizations supporting cancer research, training and care.
             </p>
           </div>
-          <div className="mt-7 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+          <div className="mt-7 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
             <FundingLogo label="Canadian Cancer Society" src="/logos/CCS_logo.svg" />
             <FundingLogo label="Canadian Institutes of Health Research" src="/logos/cihr_logo.jpg" />
             <FundingLogo label="Fonds de recherche du Québec" src="/logos/frq_logo.png" />
