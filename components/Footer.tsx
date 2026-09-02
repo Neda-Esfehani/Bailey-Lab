@@ -102,11 +102,11 @@ export function Footer() {
             </p>
           </div>
           <div className="mt-7 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
-            <FundingLogo label="Canadian Cancer Society" src="/images/research/CCS_logo.svg" />
-            <FundingLogo label="Canadian Institutes of Health Research" src="/images/research/cihr_logo.jpg" />
-            <FundingLogo label="Fonds de recherche du Québec" src="/images/research/frq_logo.png" />
-            <FundingLogo label="McGill University Health Centre" src="/images/research/muhc_logo.png" />
-            <FundingLogo label="McGill University" src="/images/research/McGill_logo.svg.webp" />
+            <FundingLogo label="Canadian Cancer Society" src="/logos/CCS_logo.svg" />
+            <FundingLogo label="Canadian Institutes of Health Research" src="/logos/cihr_logo.jpg" />
+            <FundingLogo label="Fonds de recherche du Québec" src="/logos/frq_logo.png" />
+            <FundingLogo label="McGill University Health Centre" src="/logos/rimuhc_logo.jpg" />
+            <FundingLogo label="McGill University" src="/logos/mcgill_logo.png" />
           </div>
         </section>
 
