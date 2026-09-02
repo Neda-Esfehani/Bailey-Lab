@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { contactNavItem, navItems, site } from '@/data/site';
+import { withBasePath } from '@/lib/paths';
 
 const externalLinks = [
   { label: 'Email', href: site.socials.email },
@@ -8,15 +9,17 @@ const externalLinks = [
   { label: 'LinkedIn', href: site.socials.linkedin },
 ];
 
-/** Placeholder institutional logo tile. Swap for an <img> once assets exist. */
-function LogoPlaceholder({ label }: { label: string }) {
+function FundingLogo({ label, src }: { label: string; src: string }) {
   return (
-    <div
-      role="img"
-      aria-label={`${label} logo placeholder`}
-      className="flex h-14 min-w-[9rem] items-center justify-center rounded-lg border border-line px-4 text-center text-[0.7rem] font-medium uppercase tracking-[0.12em] text-ink-faint"
-    >
-      {label}
+    <div className="flex h-20 items-center justify-center rounded-lg border border-line bg-paper px-5 py-3">
+      {/* Static hosting does not provide Next image optimization. */}
+      <img
+        src={withBasePath(src)}
+        alt={label}
+        loading="lazy"
+        decoding="async"
+        className="max-h-14 w-auto max-w-[12rem] object-contain"
+      />
     </div>
   );
 }
@@ -83,11 +86,26 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Institutional logos — replace with real assets in /public/logos */}
-        <div className="mt-14 flex flex-wrap items-center gap-4 border-t border-line pt-10">
-          <LogoPlaceholder label="RI-MUHC logo" />
-          <LogoPlaceholder label="McGill University logo" />
-        </div>
+        <section className="mt-14 border-t border-line pt-10" aria-labelledby="funding-heading">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent-600">Support & partnerships</p>
+              <h2 id="funding-heading" className="mt-2 text-lg font-semibold text-ink">
+                Research made possible by our funders and institutions
+              </h2>
+            </div>
+            <p className="max-w-md text-sm leading-relaxed text-ink-muted">
+              We are grateful to the organizations supporting cancer research, training and care.
+            </p>
+          </div>
+          <div className="mt-7 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
+            <FundingLogo label="Canadian Cancer Society" src="/images/research/CCS_logo.svg" />
+            <FundingLogo label="Canadian Institutes of Health Research" src="/images/research/cihr_logo.jpg" />
+            <FundingLogo label="Fonds de recherche du Québec" src="/images/research/frq_logo.png" />
+            <FundingLogo label="McGill University Health Centre" src="/images/research/muhc_logo.png" />
+            <FundingLogo label="McGill University" src="/images/research/McGill_logo.svg.webp" />
+          </div>
+        </section>
 
         <div className="mt-10 flex flex-col gap-2 border-t border-line pt-8 text-xs text-ink-muted sm:flex-row sm:items-center sm:justify-between">
           <p>
