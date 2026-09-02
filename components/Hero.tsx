@@ -1,5 +1,6 @@
 import { Placeholder } from './Placeholder';
 import { ButtonLink } from './ui';
+import { withBasePath } from '@/lib/paths';
 
 type HeroAction = { label: string; href: string; variant?: 'primary' | 'secondary' };
 
@@ -96,17 +97,29 @@ export function PageHero({
   eyebrow,
   title,
   description,
+  backgroundImage,
 }: {
   eyebrow?: string;
   title: string;
   description?: string;
+  backgroundImage?: string;
 }) {
   return (
-    <section className="border-b border-line bg-canvas">
-      <div className="container-page py-16 sm:py-20 lg:py-24">
-        <div className="max-w-3xl animate-fade-up">
+    <section className="relative overflow-hidden border-b border-line bg-canvas">
+      {backgroundImage ? (
+        <>
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${withBasePath(backgroundImage)})` }}
+          />
+          <div aria-hidden="true" className="absolute inset-0 bg-ink/75" />
+        </>
+      ) : null}
+      <div className="container-page relative py-16 sm:py-20 lg:py-24">
+        <div className={`max-w-3xl animate-fade-up ${backgroundImage ? 'text-white' : ''}`}>
           {eyebrow ? (
-            <p className="mb-4 text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">
+            <p className={`mb-4 text-xs font-semibold uppercase tracking-[0.18em] ${backgroundImage ? 'text-accent-200' : 'text-accent-600'}`}>
               {eyebrow}
             </p>
           ) : null}
@@ -114,7 +127,7 @@ export function PageHero({
             {title}
           </h1>
           {description ? (
-            <p className="mt-6 max-w-prose text-lg leading-relaxed text-ink-soft">
+            <p className={`mt-6 max-w-prose text-lg leading-relaxed ${backgroundImage ? 'text-white/85' : 'text-ink-soft'}`}>
               {description}
             </p>
           ) : null}
