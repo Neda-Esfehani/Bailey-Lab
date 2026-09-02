@@ -15,6 +15,7 @@ export default function GalleryPage() {
 
   return (
     <>
+      {/* The Morbius artwork gives the gallery header a distinct visual identity. */
       <PageHero
         eyebrow="Gallery"
         title="Inside the Bailey Lab"
