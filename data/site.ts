@@ -31,6 +31,7 @@ export const site = {
     labEmail: '[lab-email@example.com]',
     piName: 'Swneke D. Bailey, PhD',
     piEmail: 'swneke.bailey@mcgill.ca',
+    phone: '(514) 934-1934',
     addressLines: [
       'RI-MUHC',
       '1001 Bd Décarie',
