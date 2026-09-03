@@ -9,7 +9,15 @@ const externalLinks = [
   { label: 'LinkedIn', href: site.socials.linkedin },
 ];
 
-function FundingLogo({ label, src }: { label: string; src: string }) {
+function FundingLogo({
+  label,
+  src,
+  imageClassName = 'max-h-24',
+}: {
+  label: string;
+  src: string;
+  imageClassName?: string;
+}) {
   return (
     <div className="flex min-h-36 items-center justify-center rounded-lg border border-line bg-white px-5 py-5">
       {/* Static hosting does not provide Next image optimization. */}
@@ -18,7 +26,7 @@ function FundingLogo({ label, src }: { label: string; src: string }) {
         alt={label}
         loading="lazy"
         decoding="async"
-        className="max-h-24 w-auto max-w-full object-contain"
+        className={`${imageClassName} w-auto max-w-full object-contain`}
       />
     </div>
   );
@@ -102,7 +110,11 @@ export function Footer() {
             <FundingLogo label="Canadian Cancer Society" src="/logos/CCS_logo.svg" />
             <FundingLogo label="Canadian Institutes of Health Research" src="/logos/cihr_logo.jpg" />
             <FundingLogo label="Fonds de recherche du Québec" src="/logos/frq_logo.png" />
-            <FundingLogo label="McGill University Health Centre" src="/logos/rimuhc_logo.jpg" />
+            <FundingLogo
+              label="McGill University Health Centre"
+              src="/logos/rimuhc_logo.jpg"
+              imageClassName="max-h-32"
+            />
             <FundingLogo label="McGill University" src="/logos/mcgill_logo.png" />
           </div>
         </section>
