@@ -16,31 +16,31 @@ const config: Config = {
     extend: {
       colors: {
         // Page backgrounds
-        paper: '#FAFCFA',
-        canvas: '#EEF5F0', // off-white section background
+        paper: '#FFFFFF',
+        canvas: '#F7F7F5', // off-white section background
         // Typography — dark charcoal, not pure black
         ink: {
-          DEFAULT: '#0B1510',
-          soft: '#294238',
-          muted: '#53695D',
-          faint: '#84978B',
+          DEFAULT: '#16191D',
+          soft: '#3F464E',
+          muted: '#69717B',
+          faint: '#9AA1AA',
         },
         line: {
-          DEFAULT: '#D8E5DC',
-          strong: '#BFD2C4',
+          DEFAULT: '#E5E5E1',
+          strong: '#D3D3CE',
         },
         // Single restrained scientific accent (deep teal)
         accent: {
-          50: '#ECFDF3',
-          100: '#D1FAE0',
-          200: '#A7F3C4',
-          300: '#6EE7A0',
-          400: '#34D476',
-          500: '#16A85A',
-          600: '#087A45', // primary — high contrast on white
-          700: '#065C34',
-          800: '#064A2C',
-          900: '#04351F',
+          50: '#EFF7F7',
+          100: '#D6EBEB',
+          200: '#AED7D8',
+          300: '#7BBBBD',
+          400: '#42979B',
+          500: '#177B81',
+          600: '#0F6169', // primary — 5.9:1 on white
+          700: '#0C4D54',
+          800: '#0A3D43',
+          900: '#082F34',
         },
       },
       fontFamily: {
@@ -55,8 +55,8 @@ const config: Config = {
         card: '0.75rem',
       },
       boxShadow: {
-        card: '0 1px 2px rgba(11, 21, 16, 0.04), 0 8px 24px -12px rgba(11, 21, 16, 0.12)',
-        'card-hover': '0 2px 4px rgba(11, 21, 16, 0.05), 0 16px 40px -16px rgba(11, 21, 16, 0.20)',
+        card: '0 1px 2px rgba(22, 25, 29, 0.04), 0 8px 24px -12px rgba(22, 25, 29, 0.12)',
+        'card-hover': '0 2px 4px rgba(22, 25, 29, 0.05), 0 16px 40px -16px rgba(22, 25, 29, 0.20)',
       },
       transitionTimingFunction: {
         subtle: 'cubic-bezier(0.22, 1, 0.36, 1)',
