@@ -56,20 +56,29 @@ export default function PeoplePage() {
             />
 
             {isAlumni ? (
-              <ul className="mt-12 grid gap-x-10 gap-y-6 sm:grid-cols-2 lg:grid-cols-3">
-                {members.map((person) => (
-                  <li key={person.id} className="border-t border-line pt-5">
-                    <p className="text-base font-semibold">{person.name}</p>
-                    <p className="mt-1 text-sm text-accent-700">{person.role}</p>
-                    {person.currentPosition ? (
-                      <p className="mt-1.5 text-sm text-ink-muted">
-                        {person.currentPosition}
-                      </p>
-                    ) : null}
-                  </li>
-                ))}
-              </ul>
-            ) : (
+  <ul className="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+    {members.map((person) => (
+      <li key={person.id} className="border-t border-line pt-5">
+        {person.image ? (
+          <img
+            src={person.image}
+            alt={person.name}
+            className="mb-5 aspect-square w-full object-cover"
+          />
+        ) : null}
+
+        <p className="text-base font-semibold">{person.name}</p>
+        <p className="mt-1 text-sm text-accent-700">{person.role}</p>
+
+        {person.currentPosition ? (
+          <p className="mt-1.5 text-sm text-ink-muted">
+            {person.currentPosition}
+          </p>
+        ) : null}
+      </li>
+    ))}
+  </ul>
+) : (
               <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
                 {members.map((person) => (
                   <PersonCard key={person.id} person={person} />
