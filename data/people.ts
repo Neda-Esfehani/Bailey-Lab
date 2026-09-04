@@ -122,15 +122,13 @@ export const people: Person[] = [
     name: 'Hande Soran',
     role: 'Undergraduate Researcher',
     group: 'undergraduate',
-    bio: '[Member biography]',
-    photo: '/images/people/Hande.jpg'
+    photo: '/images/people/Hande.jpeg',
   },
   {
     id: 'undergrad-2',
     name: 'Dianyang Wang',
     role: 'Undergraduate Researcher',
     group: 'undergraduate',
-    bio: '[Member biography]',
   },
 
   {
@@ -138,7 +136,8 @@ export const people: Person[] = [
     name: 'Ansley Gnanapragasam',
     role: 'Former PhD student',
     group: 'alumni',
-    currentPosition: '[Current position to be added]',
+    currentPosition: 'Oxford Nanopore Technologies',
+    photo: '/images/people/ansley.jpg',
   },
   {
     id: 'alumni-2',
@@ -146,6 +145,7 @@ export const people: Person[] = [
     role: 'Former undergraduate student',
     group: 'alumni',
     currentPosition: 'To be determined...',
+    photo:
   },
 ];
 
