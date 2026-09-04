@@ -123,7 +123,7 @@ export const people: Person[] = [
     role: 'Undergraduate Researcher',
     group: 'undergraduate',
     bio: '[Member biography]',
-    photo: '/images/people/sven.jpg'
+    photo: '/images/people/Hande.jpg'
   },
   {
     id: 'undergrad-2',
