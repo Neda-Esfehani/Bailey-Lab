@@ -145,7 +145,6 @@ export const people: Person[] = [
     role: 'Former undergraduate student',
     group: 'alumni',
     currentPosition: 'To be determined...',
-    photo:
   },
 ];
 
