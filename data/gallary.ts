@@ -33,6 +33,7 @@ export const gallery: GalleryItem[] = [
      image: '/images/news/aki-histrader.jpg',
      imageAlt: 'Aki Kirbizakis celebrating the acceptance of the Histrader paper',
      caption: 'Aki\'s Histrader paper got accepted!',
+     imageRatio: 'photo',
    },
 
   {
