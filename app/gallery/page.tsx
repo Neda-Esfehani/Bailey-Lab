@@ -23,12 +23,12 @@ export default function GalleryPage() {
         backgroundImage="/logos/morbius.png"
       />
 
-      <Section>
+      <Section tone="ink">
         {groups.length > 0 ? (
           <div className="space-y-16">
             {groups.map((group) => (
               <section key={group.year} aria-labelledby={`gallery-year-${group.year}`}>
-                <h2 id={`gallery-year-${group.year}`} className="text-2xl font-semibold tracking-[-0.02em]">
+                <h2 id={`gallery-year-${group.year}`} className="text-2xl font-semibold tracking-[-0.02em] text-white">
                   {group.year}
                 </h2>
                 <div className="mt-7 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
