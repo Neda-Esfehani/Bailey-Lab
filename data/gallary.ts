@@ -15,6 +15,9 @@ export type GalleryItem = {
   imageAlt: string;
   /** Text displayed beneath the image. */
   caption: string;
+  /** Optional framing controls for photos with a non-landscape composition. */
+  imageRatio?: 'square' | 'photo' | 'wide' | 'panorama';
+  imagePosition?: string;
 };
 
 export type GalleryYearGroup = {
@@ -38,6 +41,8 @@ export const gallery: GalleryItem[] = [
      image: '/images/news/kyle-plate.jpg',
      imageAlt: '30 plates too many...',
      caption: '30 plates too many...',
+     imageRatio: 'photo',
+     imagePosition: 'center top',
    },
 ];
 
