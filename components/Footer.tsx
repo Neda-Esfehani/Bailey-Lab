@@ -34,15 +34,21 @@ function FundingLogo({
 
 export function Footer() {
   return (
-    <footer className="border-t border-line bg-canvas">
-      <div className="container-page py-16 lg:py-20">
+    <footer className="relative overflow-hidden border-t border-line bg-ink">
+      <div
+        aria-hidden="true"
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${withBasePath('/logos/morbius.png')})` }}
+      />
+      <div aria-hidden="true" className="absolute inset-0 bg-ink/85" />
+      <div className="container-page relative z-10 py-16 lg:py-20">
         <div className="grid gap-12 lg:grid-cols-12">
           {/* Identity + address */}
           <div className="lg:col-span-5">
             <p className="font-display text-xl font-bold tracking-[-0.01em]">
               {site.name}
             </p>
-            <address className="mt-4 not-italic text-sm leading-relaxed text-ink-soft">
+            <address className="mt-4 not-italic text-sm leading-relaxed text-white/80">
               {site.institution.institute}
               <br />
               {site.institution.university}
@@ -53,7 +59,7 @@ export function Footer() {
 
           {/* Site navigation */}
           <nav aria-label="Footer" className="lg:col-span-3">
-            <h2 className="text-xs font-semibold uppercase tracking-[0.16em] text-ink-muted">
+            <h2 className="text-xs font-semibold uppercase tracking-[0.16em] text-white/70">
               Explore
             </h2>
             <ul className="mt-4 space-y-2.5">
@@ -61,7 +67,7 @@ export function Footer() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="text-sm text-ink-soft transition-colors duration-200 hover:text-accent-700"
+                    className="text-sm text-ink-soft transition-colors duration-200 hover:text-accent-200"
                   >
                     {item.label}
                   </Link>
@@ -94,11 +100,11 @@ export function Footer() {
           </div>
         </div>
 
-        <section className="mt-14 border-t border-line pt-10" aria-labelledby="funding-heading">
+        <section className="mt-14 border-t border-white/20 pt-10" aria-labelledby="funding-heading">
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent-600">Support & partnerships</p>
-              <h2 id="funding-heading" className="mt-2 text-lg font-semibold text-ink">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent-200">Support & partnerships</p>
+              <h2 id="funding-heading" className="mt-2 text-lg font-semibold text-white">
                 Research made possible by our funders and institutions
               </h2>
             </div>
@@ -119,7 +125,7 @@ export function Footer() {
           </div>
         </section>
 
-        <div className="mt-10 flex flex-col gap-2 border-t border-line pt-8 text-xs text-ink-muted sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col gap-2 border-t border-white/20 pt-8 text-xs text-ink-muted sm:flex-row sm:items-center sm:justify-between">
           <p>
             © {new Date().getFullYear()} {site.name}, {site.institution.instituteShort}.
             All rights reserved.
