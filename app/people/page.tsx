@@ -5,6 +5,7 @@ import { SectionHeading } from '@/components/SectionHeading';
 import { Section } from '@/components/ui';
 import { peopleInGroup, personGroups, principalInvestigator } from '@/data/people';
 import { pageMetadata } from '@/lib/seo';
+import { withBasePath } from '@/lib/paths';
 
 export const metadata = pageMetadata({
   title: 'People',
@@ -59,9 +60,9 @@ export default function PeoplePage() {
   <ul className="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
     {members.map((person) => (
       <li key={person.id} className="border-t border-line pt-5">
-        {person.image ? (
+        {person.photo ? (
           <img
-            src={person.image}
+            src={withBasePath(person.photo)}
             alt={person.name}
             className="mb-5 aspect-square w-full object-cover"
           />
