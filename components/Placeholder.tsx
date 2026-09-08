@@ -25,6 +25,7 @@ export function Placeholder({
   className = '',
   rounded = true,
   priority = false,
+  objectPosition = 'center',
 }: {
   src?: string;
   alt?: string;
@@ -33,6 +34,7 @@ export function Placeholder({
   className?: string;
   rounded?: boolean;
   priority?: boolean;
+  objectPosition?: string;
 }) {
   const shape = `${ratioClass[ratio]} ${rounded ? 'rounded-card' : ''}`;
 
@@ -44,6 +46,7 @@ export function Placeholder({
         alt={alt ?? ''}
         loading={priority ? 'eager' : 'lazy'}
         decoding="async"
+        style={{ objectPosition }}
         className={`${shape} w-full object-cover bg-canvas ${className}`}
       />
     );
