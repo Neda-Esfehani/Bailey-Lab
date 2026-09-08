@@ -9,7 +9,8 @@ export function GalleryCard({ item }: { item: GalleryItem }) {
           src={item.image}
           alt={item.imageAlt}
           label="[Gallery image]"
-          ratio="wide"
+          ratio={item.imageRatio ?? 'wide'}
+          objectPosition={item.imagePosition}
           rounded={false}
           className="transition-transform duration-500 ease-subtle group-hover:scale-[1.03]"
         />
