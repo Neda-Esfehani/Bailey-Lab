@@ -15,7 +15,7 @@ export function GalleryCard({ item }: { item: GalleryItem }) {
           className="transition-transform duration-500 ease-subtle group-hover:scale-[1.03]"
         />
       </div>
-      <figcaption className="flex items-start justify-between gap-4 p-5">
+      <figcaption className="flex min-h-20 items-start justify-between gap-4 p-5">
         <span className="text-sm leading-relaxed text-ink-soft">{item.caption}</span>
         <span className="shrink-0 text-xs font-semibold tracking-[0.12em] text-accent-600">{item.year}</span>
       </figcaption>
