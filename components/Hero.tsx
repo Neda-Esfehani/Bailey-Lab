@@ -123,7 +123,7 @@ export function PageHero({
               {eyebrow}
             </p>
           ) : null}
-          <h1 className="text-4xl font-bold leading-[1.05] tracking-[-0.025em] sm:text-5xl lg:text-6xl">
+          <h1 className={`text-4xl font-bold leading-[1.05] tracking-[-0.025em] sm:text-5xl lg:text-6xl ${backgroundImage ? 'text-white' : ''}`}>
             {title}
           </h1>
           {description ? (
