@@ -116,6 +116,16 @@ export const people: Person[] = [
     interests: ['[Interest]'],
   },
 
+   {
+    id: 'grad-4',
+    name: 'Yufeng Gu',
+    role: 'PhD Student',
+    group: 'graduate',
+    photo: '/images/people/yufeng.png',
+    bio: '[Member biography]',
+    interests: ['XXXX'],
+
+  },
 
   {
     id: 'undergrad-1',
@@ -129,6 +139,7 @@ export const people: Person[] = [
     name: 'Dianyang Wang',
     role: 'Undergraduate Researcher',
     group: 'undergraduate',
+    photo: '/images/people/dianyang.jpg',
   },
 
   {
@@ -145,7 +156,18 @@ export const people: Person[] = [
     role: 'Former undergraduate student',
     group: 'alumni',
     currentPosition: 'To be determined...',
+    photo: '/images/people/jiayin.jpg',
   },
+  
+  {
+    id: 'alumni-3',
+    name: 'Juliana Cavalcante de Moura',
+    role: 'Former research assistant',
+    group: 'alumni',
+    currentPosition: 'Clinical Coordinator MUHC',
+    photo: '/images/people/juliana.jpg',
+  },
+  
 ];
 
 export const principalInvestigator: Person | undefined = people.find(
