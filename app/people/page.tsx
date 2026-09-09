@@ -1,7 +1,6 @@
 import { CTASection } from '@/components/CTASection';
 import { PageHero } from '@/components/Hero';
 import { PersonCard, PrincipalInvestigatorCard } from '@/components/PersonCard';
-import { AvatarPlaceholder } from '@/components/Placeholder';
 import { SectionHeading } from '@/components/SectionHeading';
 import { Section } from '@/components/ui';
 import { peopleInGroup, personGroups, principalInvestigator } from '@/data/people';
@@ -38,55 +37,30 @@ export default function PeoplePage() {
       ) : null}
 
       {groups.map((group, index) => {
-        const members = peopleInGroup(group.id);
-        if (members.length === 0) return null;
+  const members = peopleInGroup(group.id);
+  if (members.length === 0) return null;
 
-        const isAlumni = group.id === 'alumni';
+  return (
+    <Section
+      key={group.id}
+      id={group.id}
+      tone={index % 2 === 0 ? 'canvas' : 'paper'}
+      labelledBy={`${group.id}-heading`}
+    >
+      <SectionHeading
+        id={`${group.id}-heading`}
+        title={group.title}
+        description={group.description}
+      />
 
-        return (
-          <Section
-            key={group.id}
-            id={group.id}
-            tone={index % 2 === 0 ? 'canvas' : 'paper'}
-            labelledBy={`${group.id}-heading`}
-          >
-            <SectionHeading
-              id={`${group.id}-heading`}
-              title={group.title}
-              description={group.description}
-            />
-
-            {isAlumni ? (
-  <ul className="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
-    {members.map((person) => (
-      <li key={person.id} className="border-t border-line pt-5">
-        <AvatarPlaceholder
-          src={person.photo}
-          name={person.name}
-          className="mb-5"
-        />
-
-        <p className="text-base font-semibold">{person.name}</p>
-        <p className="mt-1 text-sm text-accent-700">{person.role}</p>
-
-        {person.currentPosition ? (
-          <p className="mt-1.5 text-sm text-ink-muted">
-            {person.currentPosition}
-          </p>
-        ) : null}
-      </li>
-    ))}
-  </ul>
-) : (
-              <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-                {members.map((person) => (
-                  <PersonCard key={person.id} person={person} />
-                ))}
-              </div>
-            )}
-          </Section>
-        );
-      })}
+      <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        {members.map((person) => (
+          <PersonCard key={person.id} person={person} />
+        ))}
+      </div>
+    </Section>
+  );
+})}
 
       <CTASection
         eyebrow="Join us"
