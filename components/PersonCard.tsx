@@ -59,9 +59,11 @@ export function PersonCard({
       {person.currentPosition ? (
         <p className="mt-2 text-sm text-ink-muted">{person.currentPosition}</p>
       ) : null}
-      {person.tenure ? (
-        <p className="mt-2 text-sm text-ink-muted">{person.tenure}</p>
-      ) : null}
+     {person.tenure ? (
+  <span className="mt-3 inline-block rounded-full border border-line px-3 py-1 text-xs text-ink-muted">
+    {person.tenure}
+  </span>
+) : null}
       {!compact && person.bio ? (
         <p className="mt-3 text-sm leading-relaxed text-ink-muted">{person.bio}</p>
       ) : null}
