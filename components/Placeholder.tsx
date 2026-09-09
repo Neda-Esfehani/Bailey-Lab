@@ -103,7 +103,7 @@ export function AvatarPlaceholder({
     <div
       role="img"
       aria-label={`Placeholder portrait for ${name}`}
-      className={`aspect-square w-full rounded-card border border-line bg-canvas grid place-items-center ${className}`}
+      className={`aspect-square w-full rounded-full border border-line bg-canvas grid place-items-center ${className}`}
     >
       <svg
         aria-hidden="true"
