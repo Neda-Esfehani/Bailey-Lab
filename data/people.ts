@@ -121,7 +121,7 @@ export const people: Person[] = [
     name: 'Yufeng Gu',
     role: 'PhD Student',
     group: 'graduate',
-    photo: '/images/people/yufeng.png',
+    photo: '/images/people/yufeng.jpg',
     bio: '[Member biography]',
     interests: ['XXXX'],
 
