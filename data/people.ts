@@ -73,6 +73,15 @@ export const people: Person[] = [
     linkedin: 'https://www.linkedin.com/in/swneke-bailey-b31b53145/',
   },
 
+  {
+    id: 'postdoc-1',
+    name: 'Gerry Shipman',
+    role: 'Postdoctoral Fellow',
+    group: 'postdoc',
+    photo: '/images/people/gerry.jpg',
+    bio: '[Member biography]',
+    interests: ['[Interest]'],
+  },
 
   {
     id: 'grad-1',
@@ -169,7 +178,7 @@ export const people: Person[] = [
   {
     id: 'alumni-3',
     name: 'Juliana Cavalcante de Moura',
-    role: 'Former Research Assistant',
+    role: 'Former Research Assistant/Non-Thesis MSc',
     group: 'alumni',
     currentPosition: 'Clinical Coordinator MUHC',
     photo: '/images/people/juliana.jpg',
@@ -189,7 +198,7 @@ export const people: Person[] = [
   {
     id: 'alumni-5',
     name: 'Anna Li',
-    role: 'Former undergraduate student',
+    role: 'Former Undergraduate Researcher',
     group: 'alumni',
     currentPosition: 'MSc Columbia University',
     photo: '/images/people/anna.jpg',
