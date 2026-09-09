@@ -96,7 +96,7 @@ export const people: Person[] = [
     role: 'PhD Student',
     group: 'graduate',
     photo: '/images/people/kyle.jpg',
-    bio: 'Catch me on a mountain or a lake.',
+    bio: 'Catch me on a mountain or lake.',
     tenure: '2023 - Present',
     interests: [
     'CRISPR-technologies',
@@ -123,6 +123,7 @@ export const people: Person[] = [
     name: 'Yufeng Gu',
     role: 'PhD Student',
     group: 'graduate',
+    tenure: '2024 - Present',
     photo: '/images/people/yufeng.jpg',
     bio: '[Member biography]',
     interests: ['XXXX'],
@@ -135,6 +136,7 @@ export const people: Person[] = [
     role: 'Undergraduate Researcher',
     group: 'undergraduate',
     photo: '/images/people/Hande.jpeg',
+    tenure: '2025 - Present',
   },
   {
     id: 'undergrad-2',
@@ -142,6 +144,7 @@ export const people: Person[] = [
     role: 'Undergraduate Researcher',
     group: 'undergraduate',
     photo: '/images/people/dianyang.jpg',
+    tenure: '2026 - Present',
   },
 
   {
@@ -151,32 +154,36 @@ export const people: Person[] = [
     group: 'alumni',
     currentPosition: 'Oxford Nanopore Technologies',
     photo: '/images/people/ansley.jpg',
+    tenure: '2019 - 2026',
   },
   {
     id: 'alumni-2',
     name: 'Jiayin Xie',
-    role: 'Former undergraduate student',
+    role: 'Former Undergraduate Researcher',
     group: 'alumni',
     currentPosition: 'To be determined...',
     photo: '/images/people/jiayin.jpg',
+    tenure: '2024 - 2026',
   },
   
   {
     id: 'alumni-3',
     name: 'Juliana Cavalcante de Moura',
-    role: 'Former research assistant',
+    role: 'Former Research Assistant',
     group: 'alumni',
     currentPosition: 'Clinical Coordinator MUHC',
     photo: '/images/people/juliana.jpg',
+    tenure: '2020 - 2026',
   },
 
   {
     id: 'alumni-4',
     name: 'Yifei Yan',
-    role: 'Former post doctoral fellow',
+    role: 'Former Post Doctoral Fellow',
     group: 'alumni',
-    currentPosition: 'Research Associate',
+    currentPosition: 'Research Associate McGill University',
     photo: '/images/people/yifei.jpg',
+    tenure: '2018 - 2024',
   },
 
   {
@@ -186,6 +193,7 @@ export const people: Person[] = [
     group: 'alumni',
     currentPosition: 'MSc Columbia University',
     photo: '/images/people/anna.jpg',
+    tenure: '2020 - 2022',
   },
   
 ];
