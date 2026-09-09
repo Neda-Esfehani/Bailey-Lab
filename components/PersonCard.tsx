@@ -47,13 +47,13 @@ export function PersonCard({
 }) {
   return (
     <article className="group flex flex-col">
-      <div className="overflow-hidden rounded-card">
-        <AvatarPlaceholder
-          src={person.photo}
-          name={person.name}
-          className="transition-transform duration-500 ease-subtle group-hover:scale-[1.03]"
-        />
-      </div>
+      <div className="overflow-hidden rounded-full">
+  <AvatarPlaceholder
+    src={person.photo}
+    name={person.name}
+    className="transition-transform duration-500 ease-subtle group-hover:scale-[1.03]"
+  />
+</div>
       <h3 className="mt-5 text-base font-semibold leading-snug">{person.name}</h3>
       <p className="mt-1 text-sm text-accent-700">{person.role}</p>
       {person.currentPosition ? (
