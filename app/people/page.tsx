@@ -1,11 +1,11 @@
 import { CTASection } from '@/components/CTASection';
 import { PageHero } from '@/components/Hero';
 import { PersonCard, PrincipalInvestigatorCard } from '@/components/PersonCard';
+import { AvatarPlaceholder } from '@/components/Placeholder';
 import { SectionHeading } from '@/components/SectionHeading';
 import { Section } from '@/components/ui';
 import { peopleInGroup, personGroups, principalInvestigator } from '@/data/people';
 import { pageMetadata } from '@/lib/seo';
-import { withBasePath } from '@/lib/paths';
 
 export const metadata = pageMetadata({
   title: 'People',
@@ -60,13 +60,11 @@ export default function PeoplePage() {
   <ul className="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
     {members.map((person) => (
       <li key={person.id} className="border-t border-line pt-5">
-        {person.photo ? (
-          <img
-            src={withBasePath(person.photo)}
-            alt={person.name}
-            className="mb-5 aspect-square w-full object-cover"
-          />
-        ) : null}
+        <AvatarPlaceholder
+          src={person.photo}
+          name={person.name}
+          className="mb-5"
+        />
 
         <p className="text-base font-semibold">{person.name}</p>
         <p className="mt-1 text-sm text-accent-700">{person.role}</p>
