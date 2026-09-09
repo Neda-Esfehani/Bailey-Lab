@@ -94,7 +94,7 @@ export function AvatarPlaceholder({
         alt={`Portrait of ${name}`}
         loading="lazy"
         decoding="async"
-        className={`aspect-square w-full rounded-card object-cover bg-canvas ${className}`}
+        className={`aspect-square w-full rounded-full object-cover bg-canvas ${className}`}
       />
     );
   }
