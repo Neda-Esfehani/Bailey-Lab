@@ -38,6 +38,7 @@ export type Person = {
   github?: string;
   /** Alumni only: where they went next. */
   currentPosition?: string;
+  tenure?: string;
 };
 
 /** Section headings and intro copy for /people, in display order. */
@@ -96,6 +97,7 @@ export const people: Person[] = [
     group: 'graduate',
     photo: '/images/people/kyle.jpg',
     bio: 'Catch me on a mountain or a lake.',
+    tenure: '2023 - Present',
     interests: [
     'CRISPR-technologies',
     'Novel methodology design',
@@ -166,6 +168,24 @@ export const people: Person[] = [
     group: 'alumni',
     currentPosition: 'Clinical Coordinator MUHC',
     photo: '/images/people/juliana.jpg',
+  },
+
+  {
+    id: 'alumni-4',
+    name: 'Yifei Yan',
+    role: 'Former post doctoral fellow',
+    group: 'alumni',
+    currentPosition: 'Research Associate',
+    photo: '/images/people/yifei.jpg',
+  },
+
+  {
+    id: 'alumni-5',
+    name: 'Anna Li',
+    role: 'Former undergraduate student',
+    group: 'alumni',
+    currentPosition: 'MSc Columbia University',
+    photo: '/images/people/anna.jpg',
   },
   
 ];
