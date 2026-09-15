@@ -41,13 +41,15 @@ function ProfileLinks({ person, compact = false }: { person: Person; compact?: b
 export function PersonCard({
   person,
   compact = false,
+  smallPhoto = false,
 }: {
   person: Person;
   compact?: boolean;
+  smallPhoto?: boolean;
 }) {
   return (
     <article className="group flex flex-col">
-      <div className="group/portrait relative aspect-square [perspective:1000px]">
+      <div className={`group/portrait relative aspect-square [perspective:1000px] ${smallPhoto ? 'max-w-48' : 'max-w-72'}`}>
         <div
           className={`absolute inset-0 [transform-style:preserve-3d] transition-transform duration-700 ease-subtle ${person.hoverPhoto ? 'group-hover/portrait:[transform:rotateY(180deg)]' : ''}`}
         >
