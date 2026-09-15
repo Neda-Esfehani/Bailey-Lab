@@ -27,6 +27,8 @@ export type Person = {
   group: PersonGroup;
   /** Path under /public, e.g. '/images/people/jane-doe.jpg'. Omit for a placeholder avatar. */
   photo?: string;
+  /** Optional image shown on hover with a smooth 3D flip. */
+  hoverPhoto?: string;
   /** 1–3 sentences. */
   bio?: string;
   /** Short keyword list rendered as tags. */
@@ -136,7 +138,7 @@ export const people: Person[] = [
     role: 'PhD Student',
     group: 'graduate',
     tenure: '2024 - Present',
-    photo: '/images/people/yufeng.jpg',
+    photo: '/images/people/yufeng.png',
     bio: '[Member biography]',
     interests: ['XXXX'],
 
