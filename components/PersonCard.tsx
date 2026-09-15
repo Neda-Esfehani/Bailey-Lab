@@ -47,13 +47,28 @@ export function PersonCard({
 }) {
   return (
     <article className="group flex flex-col">
-      <div className="overflow-hidden rounded-full">
-  <AvatarPlaceholder
-    src={person.photo}
-    name={person.name}
-    className="transition-transform duration-500 ease-subtle group-hover:scale-[1.03]"
-  />
-</div>
+      <div className="group/portrait relative aspect-square [perspective:1000px]">
+        <div
+          className={`absolute inset-0 [transform-style:preserve-3d] transition-transform duration-700 ease-subtle ${person.hoverPhoto ? 'group-hover/portrait:[transform:rotateY(180deg)]' : ''}`}
+        >
+          <div className="absolute inset-0 [backface-visibility:hidden]">
+            <AvatarPlaceholder
+              src={person.photo}
+              name={person.name}
+              className="h-full w-full rounded-card object-cover transition-transform duration-500 ease-subtle group-hover/portrait:scale-[1.02]"
+            />
+          </div>
+          {person.hoverPhoto ? (
+            <div className="absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+              <AvatarPlaceholder
+                src={person.hoverPhoto}
+                name={`${person.name} alternate photo`}
+                className="h-full w-full rounded-card object-cover"
+              />
+            </div>
+          ) : null}
+        </div>
+      </div>
       <h3 className="mt-5 text-base font-semibold leading-snug">{person.name}</h3>
       <p className="mt-1 text-sm text-accent-700">{person.role}</p>
       {person.currentPosition ? (
@@ -64,9 +79,6 @@ export function PersonCard({
     {person.tenure}
   </span>
 ) : null}
-      {!compact && person.bio ? (
-        <p className="mt-3 text-sm leading-relaxed text-ink-muted">{person.bio}</p>
-      ) : null}
       {!compact && person.interests && person.interests.length > 0 ? (
         <ul className="mt-4 flex flex-wrap gap-2">
           {person.interests.map((interest) => (
@@ -78,6 +90,9 @@ export function PersonCard({
             </li>
           ))}
         </ul>
+      ) : null}
+      {!compact && person.bio ? (
+        <p className="mt-4 text-sm leading-relaxed text-ink-muted">{person.bio}</p>
       ) : null}
       {!compact ? <ProfileLinks person={person} compact /> : null}
     </article>
