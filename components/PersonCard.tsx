@@ -111,11 +111,6 @@ export function PrincipalInvestigatorCard({ person }: { person: Person }) {
           {person.name}
         </h3>
         <p className="mt-2 text-base text-accent-700">{person.role}</p>
-        {person.bio ? (
-          <p className="mt-5 max-w-prose text-base leading-relaxed text-ink-soft">
-            {person.bio}
-          </p>
-        ) : null}
         {person.interests && person.interests.length > 0 ? (
           <div className="mt-6">
             <h4 className="text-xs font-semibold uppercase tracking-[0.14em] text-ink-muted">
@@ -132,6 +127,11 @@ export function PrincipalInvestigatorCard({ person }: { person: Person }) {
               ))}
             </ul>
           </div>
+        ) : null}
+        {person.bio ? (
+          <p className="mt-5 max-w-prose text-base leading-relaxed text-ink-soft">
+            {person.bio}
+          </p>
         ) : null}
         <ProfileLinks person={person} />
       </div>
