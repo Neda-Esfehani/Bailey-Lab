@@ -124,7 +124,10 @@ export const people: Person[] = [
     group: 'graduate',
     photo: '/images/people/neda.jpg',
     bio: '[Member biography]',
-    interests: ['[Interest]'],
+    tenure: '2026 - Present',
+    interests: ['Bioinformatics',
+               'Cancer Genomics & Epigenomics',
+               ],
   },
 
    {
