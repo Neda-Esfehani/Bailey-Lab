@@ -168,6 +168,7 @@ export const people: Person[] = [
     group: 'alumni',
     currentPosition: 'Oxford Nanopore Technologies',
     photo: '/images/people/ansley.jpg',
+    hoverPhoto: '/images/people/ansley-hover.gif',
     tenure: '2019 - 2026',
   },
   {
