@@ -53,7 +53,7 @@ export default function PeoplePage() {
         description={group.description}
       />
 
-      <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-2">
         {members.map((person) => (
           <PersonCard key={person.id} person={person} />
         ))}
