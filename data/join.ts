@@ -16,7 +16,6 @@ export type Opening = {
   /** Bullet list of expectations or requirements. */
   points?: string[];
 };
-/**
 export const openings: Opening[] = [
   {
     id: 'graduate-students',
@@ -59,7 +58,6 @@ export const openings: Opening[] = [
     points: ['[Eligible programmes]', '[Application timing]'],
   },
 ];
-*/
 
 export const howToApply = {
   intro:
