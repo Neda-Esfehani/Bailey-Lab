@@ -63,7 +63,7 @@ export const howToApply = {
   intro:
     'We welcome applications from prospective graduate students, postdoctoral fellows, and undergraduate students. Please complete the form below to submit your profile — we review applications on a rolling basis.',
   steps: [
-    'Fill out the Bailey Lab application form, including your contact information and the position(s) you are interested in.',
+    'Fill out the application form, including your contact information and the position(s) you are interested in.',
     'Attach your CV/resume where the form requests it.',
     'Briefly describe your research interests and why you would like to join the lab.',
     'We aim to respond to complete applications within 2–3 weeks.',
@@ -71,6 +71,4 @@ export const howToApply = {
   formUrl:
     'https://docs.google.com/forms/d/e/1FAIpQLSeMxuKYnZ03sXE_uUlpq8NFf9qwMAO2-juhPL75FZibjRxrNA/viewform',
   /** Rendered as a prominent notice on the page. Remove once approved. */
-  approvalNotice:
-    'These application instructions are placeholder content and require review and approval by the Bailey Lab before publication.',
 };
