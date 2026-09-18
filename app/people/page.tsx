@@ -22,6 +22,7 @@ export default function PeoplePage() {
         eyebrow="People"
         title="Our team"
         description="[Introductory paragraph to be added.] This paragraph will introduce the people who make up the Bailey Lab and the training environment they work in."
+        backgroundImage="/images/research/people_header.png"
       />
 
       {principalInvestigator ? (
