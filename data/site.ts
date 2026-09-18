@@ -28,7 +28,7 @@ export const site = {
 
   /** ⚠️ Placeholder — do not publish until confirmed by the lab. */
   contact: {
-    labEmail: '[lab-email@example.com]',
+    labEmail: 'contact@baileylab.ca',
     piName: 'Swneke D. Bailey, PhD',
     piEmail: 'swneke.bailey@mcgill.ca',
     phone: '(514) 934-1934',
@@ -45,7 +45,7 @@ export const site = {
 
   /** ⚠️ Placeholder profile links. */
   socials: {
-    email: 'mailto:[lab-email@example.com]',
+    email: 'mailto:contact@baileylab.ca',
     googleScholar: 'https://scholar.google.co.uk/',
     pubmed: 'https://pubmed.ncbi.nlm.nih.gov/',
     linkedin: 'https://www.linkedin.com/',
