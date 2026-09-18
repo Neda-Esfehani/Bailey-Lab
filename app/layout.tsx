@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   },
   description: site.description,
   applicationName: site.name,
+  icons: {
+    icon: `${site.url}/icon.svg`,
+  },
   keywords: [
     'cancer genomics',
     'epigenomics',
