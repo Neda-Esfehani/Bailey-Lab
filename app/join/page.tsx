@@ -1,8 +1,9 @@
 import { CTASection } from '@/components/CTASection';
 import { PageHero } from '@/components/Hero';
 import { SectionHeading } from '@/components/SectionHeading';
+import { ButtonLink } from '@/components/ui';
 import { Section } from '@/components/ui';
-import { howToApply, openings } from '@/data/join';
+import { howToApply } from '@/data/join';
 import { site } from '@/data/site';
 import { pageMetadata } from '@/lib/seo';
 
@@ -22,56 +23,15 @@ export default function JoinPage() {
         description="[Introductory paragraph to be added.] This paragraph will describe the lab’s training environment and the kinds of researchers it is looking for."
       />
 
-      <Section labelledBy="openings-heading">
-        <SectionHeading
-          id="openings-heading"
-          eyebrow="Opportunities"
-          title="Positions in the lab"
-          description="[Overview of current recruitment to be added.]"
-        />
-
-        <div className="mt-14 grid gap-8 lg:grid-cols-2">
-          {openings.map((opening) => (
-            <article
-              key={opening.id}
-              id={opening.id}
-              className="scroll-mt-24 rounded-card border border-line bg-paper p-8 transition-colors duration-300 hover:border-line-strong"
-            >
-              <div className="flex flex-wrap items-center gap-3">
-                <h3 className="text-xl font-semibold tracking-[-0.01em]">
-                  {opening.title}
-                </h3>
-                <span className="rounded-full bg-accent-50 px-3 py-1 text-[0.7rem] font-semibold uppercase tracking-[0.1em] text-accent-700">
-                  {opening.status}
-                </span>
-              </div>
-
-              <p className="mt-4 text-base leading-relaxed text-ink-soft">
-                {opening.description}
-              </p>
-
-              {opening.points && opening.points.length > 0 ? (
-                <ul className="mt-6 space-y-2.5">
-                  {opening.points.map((point) => (
-                    <li key={point} className="flex gap-3 text-sm text-ink-muted">
-                      <span
-                        aria-hidden="true"
-                        className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent-400"
-                      />
-                      {point}
-                    </li>
-                  ))}
-                </ul>
-              ) : null}
-            </article>
-          ))}
-        </div>
-      </Section>
-
       <Section tone="canvas" labelledBy="apply-heading">
         <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
-            <SectionHeading id="apply-heading" eyebrow="Applications" title="How to Apply" />
+            <SectionHeading
+              id="apply-heading"
+              eyebrow="Applications"
+              title="How to Apply"
+              description={howToApply.intro}
+            />
           </div>
 
           <div className="lg:col-span-7">
@@ -86,10 +46,6 @@ export default function JoinPage() {
               </p>
             </div>
 
-            <p className="mt-8 max-w-prose text-base leading-relaxed text-ink-soft">
-              {howToApply.intro}
-            </p>
-
             <ol className="mt-8 space-y-5">
               {howToApply.steps.map((step, index) => (
                 <li key={step} className="flex gap-4">
@@ -103,6 +59,21 @@ export default function JoinPage() {
                 </li>
               ))}
             </ol>
+
+            <div className="mt-10 rounded-card border border-accent-200 bg-paper p-6 shadow-card">
+              <p className="text-xs font-semibold uppercase tracking-[0.16em] text-accent-600">
+                Ready to apply?
+              </p>
+              <p className="mt-2 text-base font-semibold text-ink">
+                Submit your profile through the Bailey Lab application form.
+              </p>
+              <p className="mt-2 text-sm leading-relaxed text-ink-muted">
+                The form will guide you through your contact information, interests and CV upload.
+              </p>
+              <ButtonLink href={howToApply.formUrl} className="mt-5">
+                Open the application form
+              </ButtonLink>
+            </div>
 
             <p className="mt-8 text-sm text-ink-muted">
               General enquiries:{' '}
