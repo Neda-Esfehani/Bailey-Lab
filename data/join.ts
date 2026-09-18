@@ -61,7 +61,7 @@ export const openings: Opening[] = [
 
 export const howToApply = {
   intro:
-    'We welcome applications from prospective graduate students, postdoctoral fellows, and undergraduate students. Please complete the form below to submit your profile — we review applications on a rolling basis.',
+    'We welcome applications from prospective graduate students, postdoctoral fellows, and undergraduate students. Please complete the form below to submit your profile. We review applications on a rolling basis.',
   steps: [
     'Fill out the application form, including your contact information and the position(s) you are interested in.',
     'Attach your CV/resume where the form requests it.',
