@@ -19,7 +19,7 @@ export default function JoinPage() {
       <PageHero
         eyebrow="Join us"
         title="Join the Bailey Lab"
-        description="[Introductory paragraph to be added.] This paragraph will describe the lab’s training environment and the kinds of researchers it is looking for."
+        description="Join a curious team decoding cancer biology through genomics, epigenomics and collaboration."
       />
 
       <Section tone="canvas" labelledBy="apply-heading">
