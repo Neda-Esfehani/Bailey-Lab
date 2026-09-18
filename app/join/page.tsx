@@ -1,8 +1,7 @@
 import { CTASection } from '@/components/CTASection';
 import { PageHero } from '@/components/Hero';
 import { SectionHeading } from '@/components/SectionHeading';
-import { ButtonLink } from '@/components/ui';
-import { Section } from '@/components/ui';
+import { ButtonLink, Section } from '@/components/ui';
 import { howToApply } from '@/data/join';
 import { site } from '@/data/site';
 import { pageMetadata } from '@/lib/seo';
@@ -90,8 +89,8 @@ export default function JoinPage() {
 
       <CTASection
         eyebrow="Questions"
-        title="Not sure which position fits?"
-        description="[Short message to be added.] Prospective applicants are welcome to get in touch to discuss possible projects before applying."
+        title="Have questions?"
+        description="Prospective applicants are welcome to get in touch if they would like to discuss the lab or the application process."
         actions={[{ label: 'Contact Us', href: '/contact' }]}
       />
     </>
