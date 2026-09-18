@@ -21,6 +21,7 @@ export default function PublicationsPage() {
         eyebrow="Publications"
         title="Publications"
         description="[Introductory paragraph to be added.] A complete list of the lab’s peer-reviewed publications and preprints, organised by year."
+        backgroundImage="/images/research/publication-header.png"
       />
 
       {/* Jump-to-year navigation */}
