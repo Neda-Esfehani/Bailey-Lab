@@ -20,7 +20,7 @@ export default function GalleryPage() {
         eyebrow="Gallery"
         title="Inside the Bailey Lab"
         description="Snapshots from the people, science and shared moments that make the lab a collaborative research community."
-        backgroundImage="/logos/morbius.png"
+        backgroundImage="/images/research/gallary_header.png"
       />
 
       <Section tone="ink">
