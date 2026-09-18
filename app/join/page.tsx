@@ -34,17 +34,6 @@ export default function JoinPage() {
           </div>
 
           <div className="lg:col-span-7">
-            {/* Explicit reviewer-facing warning — remove once the lab approves this copy. */}
-            <div
-              role="note"
-              className="rounded-card border-l-4 border-accent-500 bg-accent-50 p-5"
-            >
-              <p className="text-sm font-semibold text-accent-800">Pending lab approval</p>
-              <p className="mt-1.5 text-sm leading-relaxed text-accent-900/80">
-                {howToApply.approvalNotice}
-              </p>
-            </div>
-
             <ol className="mt-8 space-y-5">
               {howToApply.steps.map((step, index) => (
                 <li key={step} className="flex gap-4">
