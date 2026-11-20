@@ -17,7 +17,7 @@ export const site = {
    * Replace when the final domain is known.
    */
   url: 'https://neda-esfehani.github.io/Bailey-Lab',
-  ogImage: '/images/og-default.png',
+  ogImage: '/images/people/BaileyLab.jpg',
 
   institution: {
     institute: 'Research Institute of the McGill University Health Centre',
